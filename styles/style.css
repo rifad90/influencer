@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap');
+
+body{
+    font-family: 'Poppins';
+    font-style: normal;
+    margin-left:80px;
+    color: #3A3A3A;    
+}
+h1{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 70px;
+}
+p{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+}
+button{
+    color: white;
+    background-color: #E02C6D;
+}
+.site-title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 36px;
+    font-feature-settings: 'liga' off;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+/* Start your Journey */
+.box-1{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    justify-content: center;
+}
+.box-2{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    justify-content: center;
+    align-items: center;
+}
+.box-2 img{
+    width: 70%;
+}
+
+.btn{
+    width: 196px;
+    height: 44px;
+    padding: 10px 24px;
+    border-radius: 41px;
+    font-weight: bold;   
+}
+.btn i{
+    padding-left: 5px;
+}
+
+/* brand logo */
+.brand-logo{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 150px 25px 150px; 
+    margin: 50px;
+    border: #AAAAAA;
+    border: 5px solid #AAAAAA; border-width: 2px 0px 2px 0px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* popular product */
+
+.popular-product{
+    text-align: center;
+}
+.popular-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 120px 0px 120px;
+}
+.popular-item{
+    text-align: left;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.popular-item img{
+    width: 99%;
+    height: 256px;
+}
+.popular-item h1{
+    margin: 0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    font-feature-settings: 'liga' off;
+    color: #18191F;
+}
+.popular-item h2{
+    margin: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.87);;
+}
+.popular-item p{
+    margin: 0px;
+    color: #5E6366;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 143%;
+}
+.star-color{
+    color: orange;
+}
+ /* see more section  */
+ .see-more{
+     height: 80px;
+     width: 100%;    
+     text-align: right;
+     color: #E02C6D;
+     margin-top: 15px;
+ }
+ .see-more span{
+    margin-right: 220px;
+  
+ }
+ /* technology */
+ #technology-product{
+     flex-direction: row-reverse;
+     margin: 0px 40px 0 40px;
+ }
+ .box-1 h2{
+     color: #E02C6D;
+ }
+ .btn-tech{
+     margin-top: 10px;
+    width: 196px;
+    height: 44px;
+    padding: 10px 24px;
+    font-weight: bold;   
+ }
+ /* footer  */
+ footer{
+     background-color: #0a0826;
+     height: 200px;
+     margin-left:-80px;
+     margin-top: 20px;
+     text-align: center;
+     padding-top: 80px;
+     color: white;
+ }
+ footer h2,h4,p{
+     margin: 0px;
+ }
+ footer i{
+     padding: 10px;
+ }
+
+ /* media query */
+
+ @media (max-width: 768px) {
+    body{
+        margin: 0px;
+        padding:0px;
+    }
+
+     h1{
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 30px;
+        margin-bottom: 10px;
+     }
+     p{
+        margin-bottom: 10px;
+     }
+     button{
+         margin-left: 25%;
+     }
+    .site-title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        font-feature-settings: 'liga' off;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .popular-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 120px 0px 120px;
+    }
+    .brand-logo{
+        padding: 10px 50px 10px 50px; 
+        margin: 40px;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .popular-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 80px 0px 80px;
+    }
+    #technology-product{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0px 20px 0 20px;
+    }
+    .box-1 h1{
+        margin-top: 20px;
+    }
+    .box-1 h2{
+        margin-top: 0px;
+    }
+    #technology-product img{
+        width: 80%;
+        height: 100%;
+    }
+    footer{
+        background-color: #0a0826;
+        margin-left:0px;
+    }
+ }
+ @media ((max-width: 480px)) {
+    body{
+        margin: 0px;
+        padding:0px;
+    }
+
+     h1{
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 30px;
+        margin-bottom: 10px;
+     }
+     p{
+        margin-bottom: 10px;
+     }
+     button{
+         margin-left: 10%;
+     }
+    .site-title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        font-feature-settings: 'liga' off;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .popular-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 120px 0px 120px;
+    }
+    .brand-logo{
+        display: flex;
+        flex-direction: column;        
+    }
+    .brand-logo img{
+        padding: 10px;      
+    }
+    .popular-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px 80px 0px 80px;
+    }
+    #technology-product{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0px 20px 0 20px;
+    }
+    .box-1 h1{
+        margin-top: 20px;
+    }
+    .box-1 h2{
+        margin-top: 0px;
+    }
+    #technology-product img{
+        width: 80%;
+        height: 100%;
+    }
+    footer{
+        background-color: #0a0826;
+        margin-left:0px;
+    }
+ }
