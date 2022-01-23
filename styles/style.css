@@ -21,6 +21,7 @@ p{
 button{
     color: white;
     background-color: #E02C6D;
+    margin-top: 5px;
 }
 .site-title{
     font-family: Poppins;
